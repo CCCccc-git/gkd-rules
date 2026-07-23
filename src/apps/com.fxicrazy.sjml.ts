@@ -22,7 +22,8 @@ export default defineGkdApp({
           name: '返回跳过广告',
           action: 'back',
           actionDelay: 1000,
-          matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
+          matches:
+            '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
         },
       ],
     },
