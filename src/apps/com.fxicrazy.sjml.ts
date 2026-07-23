@@ -19,8 +19,8 @@ export default defineGkdApp({
           name: '点击右上角跳过',
           matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
           position: {
-            x: 'screenWidth*0.9',
-            y: 'screenHeight*0.12',
+            left: 'width*0.9',
+            top: 'height*0.08',
           },
         },
       ],
