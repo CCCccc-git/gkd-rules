@@ -21,7 +21,8 @@ export default defineGkdApp({
           key: 0,
           name: '右滑返回关闭广告',
           actionDelay: 1000,
-          matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
+          matches:
+            '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
           swipeArg: {
             start: {
               x: 0,
