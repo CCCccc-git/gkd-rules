@@ -17,11 +17,11 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击右上角跳过',
-          matches:
-            '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
+          actionDelay: 1000,
+          matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
           position: {
-            left: 'width*0.9',
-            top: 'height*0.08',
+            right: 'width*0.1',
+            top: 'height*0.09',
           },
         },
       ],
