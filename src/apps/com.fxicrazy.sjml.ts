@@ -19,11 +19,21 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '返回跳过广告',
-          action: 'back',
+          name: '右滑返回关闭广告',
+          action: 'swipe',
           actionDelay: 1000,
-          matches:
-            '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
+          matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
+          swipeArg: {
+            start: {
+              left: 5,
+              top: 'height/2',
+            },
+            end: {
+              left: 'width*0.45',
+              top: 'height/2',
+            },
+            duration: 350,
+          },
         },
       ],
     },
