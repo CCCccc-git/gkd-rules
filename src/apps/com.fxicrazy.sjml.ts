@@ -7,7 +7,10 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['.ui.welcome.WelcomeActivity'],
+      activityIds: [
+        '.ui.welcome.WelcomeActivity',
+        '.ui.welcome.SplashAdActivity',
+      ],
       fastQuery: true,
       matchRoot: true,
       matchTime: 10000,
@@ -17,12 +20,11 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击右上角跳过',
-          actionDelay: 1000,
-          matches:
-            '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
+          actionDelay: 800,
+          matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
           position: {
             right: 'width*0.1',
-            top: 'height*0.09',
+            top: 'height*0.08',
           },
         },
       ],
