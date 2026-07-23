@@ -24,14 +24,14 @@ export default defineGkdApp({
           matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
           swipeArg: {
             start: {
-              x: 1,
+              x: 0,
               y: 'screenHeight/2',
             },
             end: {
-              x: 'screenWidth*0.65',
+              x: 'screenWidth*0.75',
               y: 'screenHeight/2',
             },
-            duration: 500,
+            duration: 600,
           },
         },
       ],
