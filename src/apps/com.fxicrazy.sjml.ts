@@ -19,14 +19,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击右上角跳过',
-          actionDelay: 800,
-          matches:
-            '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
-          position: {
-            right: 'width*0.1',
-            top: 'height*0.08',
-          },
+          name: '返回跳过广告',
+          action: 'back',
+          actionDelay: 1000,
+          matches: '[id="com.fxicrazy.sjml:id/ptgAdvertLayout"][visibleToUser=true]',
         },
       ],
     },
